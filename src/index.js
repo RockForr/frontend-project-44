@@ -14,10 +14,10 @@ export default (rules, getQuestionsAndAnswer) => {
     const [question, correctAnswer] = getQuestionsAndAnswer();
     console.log(`Question: ${question}`);
 
-    let answer = readlineSync.question('Your answer: ');
+    const answer = readlineSync.question('Your answer: ');
 
     if (answer !== correctAnswer) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`)
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       console.log(`Let's try again, ${name}!`);
       return;
     }

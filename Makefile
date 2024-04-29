@@ -4,10 +4,10 @@ brain-games:
 	bin/brain-games.js
 
 brain-even:
-   	bin/brain-even.js
+	bin/brain-even.js
 
 publish:
-	npm publish --dry-run
+	sudo npm publish --dry-run
 
 lint:
 	npx eslint .
