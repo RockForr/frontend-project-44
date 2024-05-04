@@ -1,4 +1,5 @@
-install: npm ci
+install: 
+	npm ci
 
 brain-games:
 	bin/brain-games.js
@@ -12,8 +13,14 @@ brain-calc:
 brain-gcd:
 	bin/brain-calc.js
 
+brain-prime:
+	bin/brain-prime.js
+
+brain-progression:
+	bin/brain-progression.js
+
 publish:
-	sudo npm publish --dry-run
+	npm publish --dry-run
 
 lint:
-	sudo npx eslint .
+	npx eslint .
