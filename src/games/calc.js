@@ -14,8 +14,22 @@ const getQuestionsAndAnswer = () => {
   const num2 = getRandomInt(1, 20);
   const randomOperator = operators[getRandomInt(0, 3)];
 
+  let expression;
+  switch (randomOperator) {
+    case '+':
+      expression = num1 + num2;
+      break;
+
+    case '-':
+      expression = num1 - num2;
+      break;
+
+    default:
+      expression = num1 * num2;
+  }
+
   const question = `${num1} ${randomOperator} ${num2}`;
-  const correctAnswer = (eval(`${num1} ${randomOperator} ${num2}`)).toString();
+  const correctAnswer = expression.toString();
 
   return [question, correctAnswer];
 };
