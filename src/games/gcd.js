@@ -10,7 +10,7 @@ const getRandomInt = (minimum, maximum) => {
 
 const greatestCommonDivisors = (number1, number2) => {
   const divisors = [];
-  for (let i = 1; i <= (number1 / 2); i += 1) {
+  for (let i = 1; i <= (number1); i += 1) {
     if (number1 % i === 0 && number2 % i === 0) {
       divisors.push(i);
     }
