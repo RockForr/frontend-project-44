@@ -1,12 +1,6 @@
-import game from '../index.js';
+import game, { getRandomInt } from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
-
-const getRandomInt = (minimum, maximum) => {
-  const min = Math.ceil(minimum);
-  const max = Math.floor(maximum);
-  return Math.floor(Math.random() * (max - min) + min);
-};
 
 const greatestCommonDivisors = (number1, number2) => {
   const divisors = [];
