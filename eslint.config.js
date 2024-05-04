@@ -7,10 +7,10 @@ import pluginJs from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
 
 // mimic CommonJS variables -- not needed if using CommonJS
-const _filename = fileURLToPath(import.meta.url);
-const _dirname = path.dirname(_filename);
+const filename = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filename);
 const compat = new FlatCompat({
-  baseDirectory: _dirname,
+  baseDirectory: dirname,
   recommendedConfig: pluginJs.configs.recommended,
 });
 
@@ -39,7 +39,7 @@ export default [
       'no-underscore-dangle': [
         'error',
         {
-          allow: ['_filename', '_dirname'],
+          allow: ['filename', 'dirname'],
         },
       ],
       'import/extensions': [
