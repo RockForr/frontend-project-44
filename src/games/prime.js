@@ -2,13 +2,17 @@ import game from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = (number) => {
-  for (let i = 2; i <= number / 2; i += 1) {
-    if (number % i === 0) {
-      return false;
-    } return true;
+function isPrime(num) {
+  if (num < 2) {
+    return false;
   }
-};
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
 
 const getRandomInt = (minimum, maximum) => {
   const min = Math.ceil(minimum);
