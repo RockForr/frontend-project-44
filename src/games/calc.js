@@ -1,10 +1,11 @@
-import game, { getRandomInt } from '../index.js';
+import game from '../index.js';
+import getRandomInt from '../utility.js';
 
 const rules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const getQuestionsAndAnswer = () => {
-  const num1 = getRandomInt(1, 100);
+  const num1 = getRandomInt();
   const num2 = getRandomInt(1, 20);
   const randomOperator = operators[getRandomInt(0, 3)];
 
