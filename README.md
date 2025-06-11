@@ -2,7 +2,56 @@ Welcome to Brain-Games!
 5 exciting console mini-games await you.
 Enjoy!
 
-To install type: 'npm link' to you terminal.
+### Installation:
+
+Clone the repository:
+
+```bash
+git clone https://github.com/RockForr/frontend-project-44.git
+
+```
+
+Navigate to the project directory:
+
+```bash
+cd frontend-project-44
+
+```
+
+Install dependencies:
+
+```bash
+make install
+
+```
+
+Сhoose a game:
+
+```bash
+make brain-even
+
+```
+
+```bash
+make brain-calc
+
+```
+
+```bash
+
+make brain-gcd
+
+```
+
+```bash
+make brain-prime
+
+```
+
+```bash
+make brain-progression
+
+```
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/RockForr/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RockForr/frontend-project-44/actions)
